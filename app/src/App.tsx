@@ -41,7 +41,6 @@ function App() {
   useEffect(() => {
     if (videoRef.current != null) {
       videoRef.current.srcObject = stream;
-      console.log(stream)
     }
   }, [videoRef.current, stream?.id]);
 
